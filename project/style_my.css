@@ -1,0 +1,464 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&display=swap');
+
+/* 폰트정보 
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+
+
+*/
+
+
+/* 전체설정 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #707070;
+    text-decoration: none;
+}
+
+body {
+    color: #707070;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/* header설정 */
+
+header {
+    width: 100%;
+    height: 1080px;
+    /*모든설정후 자바스크립트로 화면크기로
+        맞출예정으로 임시설정*/
+    ;
+    background-color: #eee;
+    background-image: url(/img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* header>top 설정 */
+header .top {
+
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.top .logo {
+    background-image: url(/img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 152px;
+    height: 89px;
+    text-indent: -9999px;
+
+}
+
+.top .gnb {}
+
+.gnb .util {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.util li {
+    margin-right: 5px;
+}
+
+
+
+.util a {
+    display: block;
+    font-size: 14px;
+    padding: 0px 10px;
+
+
+}
+
+.util form {}
+
+.util select {
+    width: 120px;
+    padding: 2px 0px;
+    /*패딩주면 select 여유있어짐 */
+
+
+}
+
+.util select:focus {
+    outline: none;
+}
+
+
+.gnb .menu {
+    display: flex
+}
+
+.menu li {}
+
+.menu a {
+    display: block;
+    font-size: 20px;
+    padding: 20px 40px;
+    margin:
+}
+
+.menu a:hover {
+    color: #333;
+}
+
+
+
+/* header > landing_title */
+
+.landing_title {
+    text-align: center;
+}
+
+.landing_title .landing_top {
+
+    font-size: 120px;
+    padding: 50px 0px;
+    color: #006837;
+    margin-top: 120px;
+
+}
+
+.landing_top strong {}
+
+.landing_top em {
+    font-style: normal;
+    color: #f15a25;
+    font-weight: bold;
+}
+
+.landing_title .landing_sub {
+
+    font-size: 28px;
+    color: #fff;
+
+
+}
+
+.landing_title .link_btn {
+    display: flex;
+    justify-content: center;
+
+    margin: 50px 0;
+
+}
+
+.link_btn li {
+    margin-right: 10px;
+
+}
+
+.link_btn a {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 30px 120px;
+    background-color: #006837;
+
+}
+
+.link_btn li:nth-child(2) a {
+    background-color: #f15a25;
+    ;
+}
+
+.landing_title .slide_btn {}
+
+
+/* 06/23 */
+
+/* section 콘텐츠 구간 */
+
+/*  */
+
+
+.con01 {
+    padding: 120px 0;
+}
+
+.con01 .con01_title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.con01_title h3 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.con01_title p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+
+/* con01_img 설정 - 갤러리 슬라이드 형식 */
+
+.con01 .con01_img {
+    width: 1440px;
+    background-color: yellow;
+    height: 456px;
+    overflow: hidden;
+    position: relative;
+}
+
+.con01_img ul {
+    width: 2880px;
+    height: 400px;
+    background-color: blue;
+    opacity: 0.5;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -200px;
+
+    /* 임시설정 */
+    transition: all 4s
+}
+
+.con01_img li {
+    display: flex;
+    width: 280px;
+    margin-right: 8px;
+    background-color: #000;
+    font-size: 80px;
+}
+
+
+
+
+.con01_img ul:hover {
+    left: -1440px;
+
+
+}
+
+/* con2 설정 */
+
+.con2 .con2_title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.con2_title h3 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.con2_title p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.con2_title strong {
+    font-size: 22px;
+    color: #666;
+
+}
+
+.con2 .con2_img {
+    /* background-color: teal; */
+    width: 1440px;
+    height: 619;
+
+
+
+
+
+}
+
+.con2 .con2_img ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+
+
+
+
+}
+
+.con2_img ul li {
+    width: 350px;
+
+    margin-right: 72px;
+    color: #707070;
+    text-align: center;
+}
+
+.con2_img li h3 {
+    margin-top: 30px;
+}
+
+.con2_img li p {
+    margin-top: 15px;
+}
+
+.con2_img ul li:hover {
+    background-color: #f15a25;
+    color: #fff
+}
+
+
+/* con3 설정 */
+
+
+.con3 {
+    padding: 120px 0;
+}
+
+.con3 .con3_title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.con3_title h3 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.con3_title ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.con3_title ul li {
+    margin: 0 5px;
+    padding: 20px 40px;
+    background-color: #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.con3_title ul li:hover {
+    background-color: #1c1c1c;
+    color: #fff;
+    opacity: 0.8;
+    
+}
+
+
+.con3_title ul li.on {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+/* 컨텐츠3_img 설정 */
+
+.con3_img {
+    width: 100%;
+    height: 751px;
+    background-color: palevioletred;
+    position: relative;
+}
+
+
+.con3_img ul {
+    display: none;
+    position: absolute;
+  
+    
+}
+
+
+.con3_img ul.on {
+    display: block;
+}
+
+.con3_img ul li {
+    float: left;
+    
+    
+}
+
+
+
+.con3_img ul li:nth-child(1) {
+    
+  
+}
+
+.con3_img ul li:nth-child(1) img {
+    
+}
+
+.con3_img ul li:nth-child(2) {
+    margin-left: 13px;
+}
+
+.con3_img ul li:nth-child(3) {
+    margin-top: 12px;
+    margin-left: 13px;
+    background-color: ;
+    
+    
+}
+
+.con3_img ul li:nth-child(3) img {
+    width: 351px;
+    height: 500px;
+    vertical-align: top;
+}
+
+.con3_img ul li:nth-child(4) {
+    margin-top: 15px;
+    margin-left: 11px;
+    
+}
+
+.con3_img ul li:nth-child(4) img {
+    width: 351px;
+    height: 414px;
+    vertical-align: top;
+}
+
+/* 1500px 이상일 때 설정 */
+
+
+@media (min-width:1500px) {
+
+    /* 전체 화면 가로 설정 */
+    .top,
+    .landing_title,
+    .con01,
+    .con2,
+    .con3 {
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
